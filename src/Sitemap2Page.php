@@ -10,9 +10,9 @@ use SilverStripe\ORM\DataList;
  *
  * @mixin SitemapExtension
  */
-class SitemapPage extends Page
+class Sitemap2Page extends Page
 {
-    private static $table_name = 'SitemapPage';
+    private static $table_name = 'Sitemap2Page';
 
     private static $icon = 'tractorcow/silverstripe-sitemap2:images/sitemap.png';
 

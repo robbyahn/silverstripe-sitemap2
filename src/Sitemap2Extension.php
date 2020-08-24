@@ -12,9 +12,9 @@ use SilverStripe\CMS\Model\SiteTreeExtension;
 /**
  * @author Damian Mooyman
  *
- * @property SiteTree|SitemapExtension $owner
+ * @property SiteTree|Sitemap2Extension $owner
  */
-class SitemapExtension extends SiteTreeExtension
+class Sitemap2Extension extends SiteTreeExtension
 {
     private static $db = [
         'HideOnSitemap' => 'Boolean' // Allows manual hiding on page
@@ -49,7 +49,7 @@ class SitemapExtension extends SiteTreeExtension
      */
     public function RenderSitemap()
     {
-        return $this->owner->renderWith('TractorCow\\Sitemap2\\SitemapEntry');
+        return $this->owner->renderWith('Tractorcow\\Sitemap2\\SitemapEntry');
     }
 
     public function updateSettingsFields(FieldList $fields)
